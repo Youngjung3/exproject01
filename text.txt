@@ -1,0 +1,38 @@
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Youngjung3/test.git
+git push -u origin main
+
+1. 깃허브와 깃로컬 연동시 규칙
+2. 로컬에 버전생성
+3. 깃허브에 리포지토리(폴더) 생성
+-프로젝트 관리 폴더-
+4. 로컬에서 리포지토리와 연결
+5. 푸쉬
+
+프로젝트1을 
+git init
+.gitignore 
+git add .
+git commit -m "first commit"
+-깃허브에 리포지토리 생성-
+git branch -M main
+git romote add origin "리포지토리주소"
+git push origin main
+
+---------------------------------------------
+2번째 부터
+
+1. 수정할게 있어야함
+ - 파일에 수정이력이 없으면 workingtree clean 이라는 오류 메시지 출력됨
+
+**작업순서
+1. git add 파일명 (와일드카드)
+	- git add * 모든파일
+	- git add . 수정된 파일
+2. git commit -m ""
+ 깃 버전생성 메시지 "메시지내용"
+ 깃 커밋시 메시지 내용은 공동작업자가 이해할 수 있도록 수정내용을 구체적으로 작성해야 한다.
+3. git push origin 브랜치명(main)
